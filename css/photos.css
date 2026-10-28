@@ -1,0 +1,28 @@
+/* ---------- Photos ---------- */
+.win.photos .win-body{overflow:hidden;background:#2b2b2e}
+.ph{display:flex;flex-direction:column;height:100%;position:relative;color:#e8e8e8;font-size:12px}
+.ph-bar{flex:none;display:flex;align-items:center;gap:8px;padding:0 10px;height:28px}
+.ph-bar.top{background:linear-gradient(#5c5c60,#3d3d41);border-bottom:1px solid #1a1a1c;box-shadow:inset 0 1px 0 rgba(255,255,255,.18)}
+.ph-bar.top img{height:20px;width:auto}
+.ph-count{margin-left:auto;color:#aaa}
+.ph-bar.bottom{height:26px;justify-content:center;background:linear-gradient(#3d3d41,#2c2c2f);border-top:1px solid #111;color:#aaa}
+.ph-bar input{width:140px;accent-color:#6aa0ee}
+.ph-bar .sm{font-size:7px}.ph-bar .lg{font-size:12px}
+.ph-grid{flex:1;min-height:0;overflow:auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(var(--t,150px),1fr));gap:16px;padding:16px;align-content:start;outline:0}
+.ph-cell{aspect-ratio:1;padding:5px;background:#fff;border:0;box-shadow:0 3px 8px rgba(0,0,0,.7);cursor:default}
+.ph-cell img{width:100%;height:100%;object-fit:cover;display:block;background:#ddd}
+.ph-cell:focus-visible,.ph-cell:active{outline:3px solid #5d9bf0}
+.ph-empty{grid-column:1/-1;padding:40px;text-align:center;color:#999}
+
+.ph-view{position:absolute;inset:0;z-index:5;background:rgba(10,10,12,.96);display:flex;align-items:center;justify-content:center}
+.ph-view[hidden]{display:none}
+.pv-stage{position:absolute;inset:34px 56px 40px;display:grid;place-items:center}
+.pv-stage img{max-width:100%;max-height:100%;object-fit:contain;box-shadow:0 6px 24px rgba(0,0,0,.8);border:6px solid #fff;transition:opacity .2s}
+.ph-view.loading .pv-stage img{opacity:.2}
+.pv-cap{position:absolute;left:0;right:0;bottom:12px;text-align:center;color:#ccc;text-shadow:0 1px 2px #000}
+.pv-nav,.pv-x{position:absolute;border:0;color:#fff;cursor:default;background:rgba(255,255,255,.14);border-radius:50%;display:grid;place-items:center;line-height:1;box-shadow:inset 0 0 0 1px rgba(255,255,255,.3)}
+.pv-nav{top:50%;width:36px;height:36px;margin-top:-18px;font-size:28px;padding-bottom:4px}
+.pv-nav.prev{left:10px}.pv-nav.next{right:10px}
+.pv-x{top:8px;right:10px;width:24px;height:24px;font-size:12px}
+.pv-nav:hover,.pv-x:hover{background:rgba(255,255,255,.28)}
+@media (max-width:700px){.pv-stage{inset:34px 8px 40px}.pv-nav{opacity:.6}.ph-grid{gap:10px;padding:10px}.ph-bar input{width:100px}}

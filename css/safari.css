@@ -1,0 +1,34 @@
+/* ---------- Safari (Leopard) ---------- */
+.win.safari .win-body{overflow:hidden;background:#fff}
+.sf{display:flex;flex-direction:column;height:100%}
+.sf-bar{padding:6px 10px 7px}
+.addr{flex:1;display:flex;align-items:center;gap:6px;height:22px;margin:0 6px;padding:0 4px 0 8px;background:#fff;border:1px solid #6a6a6a;border-radius:11px;box-shadow:inset 0 1px 3px rgba(0,0,0,.35),0 1px 0 rgba(255,255,255,.4)}
+.addr .fav{display:flex;align-items:center;width:16px;height:14px;flex:none;justify-content:center}
+.addr .fav svg{height:14px;width:14px}.addr .fav img{height:11px;width:auto}
+.addr input{flex:1;min-width:0;border:0;outline:0;background:none;font:13px var(--font);text-align:center;user-select:text;-webkit-user-select:text}
+.addr .rl{width:18px;height:18px;border:0;padding:0;border-radius:50%;background:none;display:grid;place-items:center;cursor:default}
+.addr .rl svg{width:12px;height:12px}
+.addr .rl.spin svg{animation:spin .6s linear}
+@keyframes spin{to{transform:rotate(360deg)}}
+.sf-tabs{flex:none;display:flex;align-items:flex-end;height:25px;padding:3px 4px 0;gap:4px;background:linear-gradient(#a9a9a9,#c6c6c6);border-bottom:1px solid #6a6a6a}
+.tabs{flex:1;min-width:0;display:flex;gap:2px;align-items:flex-end;height:100%}
+.tab{position:relative;flex:1 1 0;max-width:200px;min-width:0;height:22px;display:flex;align-items:center;justify-content:center;gap:5px;padding:0 22px;font-size:12px;cursor:default;outline:0;
+  border:1px solid #7b7b7b;border-bottom:0;border-radius:5px 5px 0 0;background:linear-gradient(#d9d9d9,#b8b8b8);color:#333}
+.tab.on{height:23px;margin-bottom:-1px;background:linear-gradient(#f7f7f7,#e2e2e2);color:#000;box-shadow:inset 0 1px 0 #fff}
+.tab .mi{display:flex;align-items:center;height:13px;flex:none}
+.tab .mi svg{height:13px;width:13px}.tab .mi img{height:10px;width:auto}
+.tab .tn{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tab .x{position:absolute;left:5px;top:50%;width:14px;height:14px;margin-top:-7px;padding:0;border:0;border-radius:50%;font-size:8px;line-height:14px;color:#fff;background:#8a8a8a;opacity:0;cursor:default}
+.tab:hover .x{opacity:1}
+.tab .x:hover{background:#555}
+.newtab{flex:none;width:20px;height:18px;margin-bottom:2px;border:1px solid #6a6a6a;border-radius:4px;padding:0;font-size:15px;line-height:14px;color:#333;cursor:default;background:linear-gradient(#fdfdfd,#d0d0d0)}
+.newtab.off{opacity:.4}
+.sf-page{flex:1;min-height:0;overflow:auto;display:grid;place-items:center;padding:24px;background:#fff}
+.sf-card{display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center;max-width:420px}
+.sf-card .logo{width:min(260px,70%)}.sf-card .logo img{width:100%;height:auto;display:block}
+.sf-card .siteicon{width:110px;height:110px;filter:drop-shadow(0 4px 6px rgba(0,0,0,.35))}.sf-card .siteicon svg{width:100%;height:100%}
+.sf-card p{margin:0;color:#777;font-size:12px}
+.aqua-btn{min-width:200px;height:34px;padding:0 26px;border-radius:17px;border:1px solid #1f4fa6;font:bold 14px var(--font);color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,.4);cursor:default;
+  background:linear-gradient(#a5c7fa 0,#5d95ee 49%,#2f6fe0 51%,#5b9bf6 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.7),0 1px 3px rgba(0,0,0,.4)}
+.aqua-btn:active{background:linear-gradient(#6e9fe6 0,#2f62c4 49%,#1d4fb0 51%,#3f78d6 100%)}
+@media (max-width:700px){.sf-bar .seg{display:none}.addr{margin:0}}

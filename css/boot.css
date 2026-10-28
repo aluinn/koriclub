@@ -1,0 +1,6 @@
+/* ---------- boot / loading screen ---------- */
+#boot{position:fixed;inset:0;z-index:20000;background:#000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(60px,14vh,120px);transition:opacity .7s ease;cursor:default}
+#boot.done{opacity:0;pointer-events:none}
+#boot img{width:clamp(150px,22vw,260px);height:auto;display:block;margin-top:-6vh}
+#boot .bar{width:clamp(180px,32vw,320px);height:8px;border-radius:4px;background:#262626;border:1px solid #3a3a3a;box-shadow:inset 0 1px 2px rgba(0,0,0,.8);overflow:hidden}
+#boot .bar i{display:block;height:100%;width:0;border-radius:3px;background:linear-gradient(#e6e6e6,#b4b4b4)}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><defs>
+<pattern id="m" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path d="M0 0h7M0 0v7" stroke="#d9dde3" stroke-width="1.3"/></pattern>
+<linearGradient id="b" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6c727c"/><stop offset=".3" stop-color="#2b2e34"/><stop offset=".7" stop-color="#23262b"/><stop offset="1" stop-color="#5f656f"/></linearGradient>
+<linearGradient id="in" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#15171a"/><stop offset="1" stop-color="#3a3e46"/></linearGradient>
+<linearGradient id="rim" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8d939d"/><stop offset=".3" stop-color="#fff"/><stop offset="1" stop-color="#7a808a"/></linearGradient>
+<clipPath id="bd"><path d="M22 28l9 82q2 12 33 12t33-12l9-82z"/></clipPath></defs>
+<path d="M22 28l9 82q2 12 33 12t33-12l9-82z" fill="url(#b)"/>
+<g clip-path="url(#bd)"><rect width="128" height="128" fill="url(#m)" opacity=".85"/><path d="M22 28h30v100H22z" fill="#fff" opacity=".07"/><ellipse cx="64" cy="124" rx="34" ry="10" fill="#fff" opacity=".25"/></g>
+<path d="M22 28l9 82q2 12 33 12t33-12l9-82z" fill="none" stroke="#aeb4bd" stroke-width="2"/>
+<ellipse cx="64" cy="28" rx="42" ry="12" fill="url(#in)"/>
+<ellipse cx="64" cy="28" rx="42" ry="12" fill="none" stroke="url(#rim)" stroke-width="4"/></svg>

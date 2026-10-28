@@ -1,0 +1,8 @@
+.DS_Store
+# reference material (not part of the site)
+inspo/
+PROMPT-1.md
+# originals: GitHub rejects files over 100 MB and the site only uses the web copies / mp4s
+*.mov
+content/photos/
+content/Gifs/
